@@ -1,0 +1,120 @@
+/* ===================================
+========= register page  */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-direction: column;
+  background-color: #f0f4f8;
+  background-image: radial-gradient(circle, #f0f4f8 0%, #d9e4f5 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Cart Shape */
+.form-container::before {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+/* Smaller Cart Shape for a Complete Look */
+.form-container::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: rotate(45deg);
+  z-index: -2;
+}
+
+.form-container form {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  z-index: 1;
+}
+
+.form-container form .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-container form input {
+  border: 1px solid #b0bec5;
+  border-radius: 6px;
+  padding: 14px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-container form input:focus {
+  border-color: #009688;
+  box-shadow: 0 0 8px rgba(0, 150, 136, 0.2);
+  outline: none;
+}
+
+.form-container form button {
+  border: none;
+  border-radius: 6px;
+  background-color: #009688;
+  color: #ffffff;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.form-container form button:hover {
+  background-color: #00796b;
+  box-shadow: 0 4px 8px rgba(0, 150, 136, 0.3);
+}
+
+.forgot-btn {
+  background-color: transparent;
+  border: none;
+  color: #009688;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forgot-btn:hover {
+  color: #00796b;
+  text-decoration: underline;
+}
+
